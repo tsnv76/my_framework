@@ -2,6 +2,7 @@ class PageNotFound404:
     def __call__(self):
         return '404 WHAT', '404 PAGE NOT Found'
 
+
 class Framework:
 
     """ Класс Framework - основа WSGI-фреймворка"""

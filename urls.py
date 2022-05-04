@@ -1,7 +1,9 @@
-from views import Index, About
+from views import Index, About, Products, Contacts
 
 # Набор привязок: путь-контроллер
 routes = {
     '/': Index(),
-    '/about': About()
+    '/about/': About(),
+    '/products/': Products(),
+    '/contacts/': Contacts()
 }
