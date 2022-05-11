@@ -5,6 +5,6 @@ from urls import routes
 # Создаем объект WSGI-приложения
 application = Framework(routes)
 
-with make_server('', 8081, application) as httpd:
-    print("Запуск на порту 8080...")
+with make_server('', 8082, application) as httpd:
+    print("Запуск на порту 8082...")
     httpd.serve_forever()
