@@ -12,9 +12,9 @@ class About:
         return '200 OK', render('about.html')
 
 
-class Products:
+class Otchets:
     def __call__(self, *args):
-        return '200 OK', render('products.html')
+        return '200 OK', render('otchets.html')
 
 
 class Contacts:

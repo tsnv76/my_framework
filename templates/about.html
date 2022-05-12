@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>About</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-<body>
-| <a href="/">Главная</a>
-| <a href="/about">О компании </a>
-| <a href="/products">Наша продукция</a>
-| <a href="/contacts">Контакты</a>
-    <h1>Заголовок 1</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}
+    О модуле
+{% endblock %}
+{% block style %}
+    {% include "inc-style.html" %}
+{% endblock %}
+{% block menu %}
+    {% include "inc-menu.html" %}
+{% endblock %}
+{% block body %}
+    Что может наш модуль
+{% endblock %}
+{% block footer %}
+    {% include "inc-footer.html" %}
+{% endblock %}
