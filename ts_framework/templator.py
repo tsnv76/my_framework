@@ -3,7 +3,10 @@ from jinja2 import Template
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
 
+from decors import log
 
+
+@log
 def render(template_name, folder='templates', **kwargs):
     """
     Минимальный пример работы с шаблонизатором
@@ -17,12 +20,3 @@ def render(template_name, folder='templates', **kwargs):
     env.loader = FileSystemLoader(folder)
     template = env.get_template(template_name)
     return template.render(**kwargs)
-
-
-    # file_path = join(folder, template_name)
-    # # Открываем шаблон по имени
-    # with open(file_path, encoding='utf-8') as f:
-    #     # Читаем
-    #     template = Template(f.read())
-    # # Рендерим шаблон с параметрами
-    # return template.render(**kwargs)
